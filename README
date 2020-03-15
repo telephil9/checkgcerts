@@ -1,0 +1,15 @@
+checkgcerts
+===========
+Check gmail servers certificates (both imap and smtp) against local TLS thumbprints found in /sys/lib/tls/
+Useful to know when thumbprints need to be updated.
+This could be fully automated to automatically add new hashes to the files.
+
+Build:
+------
+mk install
+
+Usage:
+checkgcerts >logfile >[2=1]
+
+Look for certificates hashes in the logfile
+
